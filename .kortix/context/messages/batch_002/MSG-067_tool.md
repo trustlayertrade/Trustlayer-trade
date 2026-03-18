@@ -1,0 +1,6 @@
+# MSG-067 [TOOL]
+Archived: 2026-03-18T04:12:51.663882+00:00
+
+---
+
+{"output": "root@cd8ccb03-d807-45a2-95a0-8b8885c4d4d9:/app# cd /workspace\r\n\rroot@cd8ccb03-d807-45a2-95a0-8b8885c4d4d9:/workspace# tail -30 /workspace/app.js; echo '__CMD_DONE_8653e95b__' $?\r\n\r    initNavigation();\r\n    initDocumentUpload();\r\n    initDemoMode();\r\n    initHeroActions();\r\n    \r\n    // Add custom font loading\r\n    document.fonts.ready.then(() => {\r\n        console.log('TrustLayer Trade - Fonts loaded');\r\n    });\r\n    \r\n    // Initial stats animation\r\n    setTimeout(() => {\r\n        if (elements.docsAnalyzed) {\r\n            const baseDocs = 1247;\r\n            animateValue(elements.docsAnalyzed, 0, baseDocs, 1500);\r\n        }\r\n    }, 500);\r\n}\r\n\r\n// Run on DOM ready\r\nif (document.readyState === 'loading') {\r\n    document.addEventListener('DOMContentLoaded', init);\r\n} else {\r\n    init();\r\n}\r\n\r\n// ============================================\r\n// Global Functions (for inline handlers)\r\n// ============================================\r\nwindow.showToast = showToast;", "cwd": "/workspace", "exit_code": 0}
