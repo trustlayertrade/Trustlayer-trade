@@ -29,6 +29,7 @@
                 <li><a href="#dashboard" class="nav-link active">Dashboard</a></li>
                 <li><a href="#documents" class="nav-link">Documents</a></li>
                 <li><a href="#company-verify" class="nav-link">Verify Company</a></li>
+                <li><a href="#company-pricing" class="nav-link">Company Pricing</a></li>
                 <li><a href="#analysis" class="nav-link">Analysis</a></li>
                 <li><a href="#reports" class="nav-link">Reports</a></li>
             </ul>
@@ -521,18 +522,65 @@
                     </div>
                     <select class="country-select" id="countrySelect">
                         <option value="">All Countries</option>
-                        <option value="MA">Morocco</option>
-                        <option value="FR">France</option>
-                        <option value="DE">Germany</option>
-                        <option value="US">United States</option>
-                        <option value="CN">China</option>
-                        <option value="GB">United Kingdom</option>
-                        <option value="ES">Spain</option>
-                        <option value="IT">Italy</option>
-                        <option value="NL">Netherlands</option>
-                        <option value="BE">Belgium</option>
-                        <option value="AE">UAE</option>
-                        <option value="TR">Turkey</option>
+                        <optgroup label="North Africa & Middle East">
+                            <option value="MA">Morocco</option>
+                            <option value="EG">Egypt</option>
+                            <option value="TN">Tunisia</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AE">UAE</option>
+                            <option value="SA">Saudi Arabia</option>
+                            <option value="QA">Qatar</option>
+                            <option value="KW">Kuwait</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="ES">Spain</option>
+                            <option value="IT">Italy</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="BE">Belgium</option>
+                            <option value="CH">Switzerland</option>
+                            <option value="AT">Austria</option>
+                            <option value="SE">Sweden</option>
+                            <option value="DK">Denmark</option>
+                            <option value="NO">Norway</option>
+                            <option value="PL">Poland</option>
+                            <option value="PT">Portugal</option>
+                            <option value="GR">Greece</option>
+                            <option value="TR">Turkey</option>
+                        </optgroup>
+                        <optgroup label="Americas">
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="MX">Mexico</option>
+                            <option value="BR">Brazil</option>
+                            <option value="AR">Argentina</option>
+                            <option value="CL">Chile</option>
+                            <option value="CO">Colombia</option>
+                        </optgroup>
+                        <optgroup label="Asia Pacific">
+                            <option value="CN">China</option>
+                            <option value="JP">Japan</option>
+                            <option value="KR">South Korea</option>
+                            <option value="IN">India</option>
+                            <option value="SG">Singapore</option>
+                            <option value="HK">Hong Kong</option>
+                            <option value="TW">Taiwan</option>
+                            <option value="VN">Vietnam</option>
+                            <option value="TH">Thailand</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="AU">Australia</option>
+                            <option value="NZ">New Zealand</option>
+                        </optgroup>
+                        <optgroup label="Africa">
+                            <option value="ZA">South Africa</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="KE">Kenya</option>
+                            <option value="GH">Ghana</option>
+                            <option value="CI">Ivory Coast</option>
+                        </optgroup>
                     </select>
                     <button class="btn btn-primary" id="searchCompanyBtn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -694,7 +742,7 @@
                         </div>
                     </div>
                     
-                    <!-- Pending Company Card -->
+                    <!-- Pending Company Card 3 -->
                     <div class="company-card pending">
                         <div class="company-card-header">
                             <div class="company-avatar" style="background: linear-gradient(135deg, #64748B 0%, #475569 100%);">
@@ -765,6 +813,439 @@
                         <div class="company-card-footer">
                             <button class="btn btn-secondary btn-sm">View Profile</button>
                             <button class="btn btn-primary btn-sm">Verify Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Verified Company Card 4 - UAE -->
+                    <div class="company-card verified">
+                        <div class="company-card-header">
+                            <div class="company-avatar" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%);">
+                                <span>AT</span>
+                            </div>
+                            <div class="company-info">
+                                <h3>Arabian Trade FZ-LLC</h3>
+                                <p class="company-location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    Dubai, UAE
+                                </p>
+                            </div>
+                            <div class="verification-badge verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M9 12l2 2 4-4"/>
+                                </svg>
+                                Verified
+                            </div>
+                        </div>
+                        <div class="company-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Registration</span>
+                                <span class="detail-value">FZ-77821</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Tax ID</span>
+                                <span class="detail-value">TRN-123456789</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Trust Score</span>
+                                <span class="trust-score high">94/100</span>
+                            </div>
+                        </div>
+                        <div class="company-verification-checks">
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                DMCC Registry
+                            </div>
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                VAT Valid
+                            </div>
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Trade License
+                            </div>
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Sanctions Clear
+                            </div>
+                        </div>
+                        <div class="company-card-footer">
+                            <button class="btn btn-secondary btn-sm">View Profile</button>
+                            <button class="btn btn-primary btn-sm">Request Verification</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Verified Company Card 5 - USA -->
+                    <div class="company-card verified">
+                        <div class="company-card-header">
+                            <div class="company-avatar" style="background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);">
+                                <span>PT</span>
+                            </div>
+                            <div class="company-info">
+                                <h3>Pacific Trade Solutions Inc.</h3>
+                                <p class="company-location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    Los Angeles, USA
+                                </p>
+                            </div>
+                            <div class="verification-badge verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M9 12l2 2 4-4"/>
+                                </svg>
+                                Verified
+                            </div>
+                        </div>
+                        <div class="company-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Registration</span>
+                                <span class="detail-value">C4567890</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">EIN</span>
+                                <span class="detail-value">95-1234567</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Trust Score</span>
+                                <span class="trust-score high">90/100</span>
+                            </div>
+                        </div>
+                        <div class="company-verification-checks">
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                California SOS
+                            </div>
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                EIN Valid
+                            </div>
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                D&B Rating
+                            </div>
+                            <div class="check-item pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="12" y1="8" x2="12" y2="12"/>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                                </svg>
+                                Bank References
+                            </div>
+                        </div>
+                        <div class="company-card-footer">
+                            <button class="btn btn-secondary btn-sm">View Profile</button>
+                            <button class="btn btn-primary btn-sm">Request Verification</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Pending Company Card 6 - India -->
+                    <div class="company-card pending">
+                        <div class="company-card-header">
+                            <div class="company-avatar" style="background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);">
+                                <span>IE</span>
+                            </div>
+                            <div class="company-info">
+                                <h3>India Exports Pvt Ltd</h3>
+                                <p class="company-location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    Mumbai, India
+                                </p>
+                            </div>
+                            <div class="verification-badge pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="12" y1="8" x2="12" y2="12"/>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                                </svg>
+                                Pending
+                            </div>
+                        </div>
+                        <div class="company-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Registration</span>
+                                <span class="detail-value">U12345MH2024</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">GST</span>
+                                <span class="detail-value">27AABCU9603R1ZX</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Trust Score</span>
+                                <span class="trust-score medium">72/100</span>
+                            </div>
+                        </div>
+                        <div class="company-verification-checks">
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                MCA Registration
+                            </div>
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                GST Valid
+                            </div>
+                            <div class="check-item pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="12" y1="8" x2="12" y2="12"/>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                                </svg>
+                                IEC Code
+                            </div>
+                            <div class="check-item pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="12" y1="8" x2="12" y2="12"/>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                                </svg>
+                                Bank Account
+                            </div>
+                        </div>
+                        <div class="company-card-footer">
+                            <button class="btn btn-secondary btn-sm">View Profile</button>
+                            <button class="btn btn-primary btn-sm">Verify Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Verified Company Card 7 - France -->
+                    <div class="company-card verified">
+                        <div class="company-card-header">
+                            <div class="company-avatar" style="background: linear-gradient(135deg, #EC4899 0%, #DB2777 100%);">
+                                <span>SF</span>
+                            </div>
+                            <div class="company-info">
+                                <h3>Société Française de Commerce</h3>
+                                <p class="company-location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    Marseille, France
+                                </p>
+                            </div>
+                            <div class="verification-badge verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M9 12l2 2 4-4"/>
+                                </svg>
+                                Verified
+                            </div>
+                        </div>
+                        <div class="company-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Registration</span>
+                                <span class="detail-value">SIRET 123 456</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">VAT ID</span>
+                                <span class="detail-value">FR12345678901</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Trust Score</span>
+                                <span class="trust-score high">89/100</span>
+                            </div>
+                        </div>
+                        <div class="company-verification-checks">
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                INPI Registry
+                            </div>
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                VIES Valid
+                            </div>
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Website Domain
+                            </div>
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Bank Verified
+                            </div>
+                        </div>
+                        <div class="company-card-footer">
+                            <button class="btn btn-secondary btn-sm">View Profile</button>
+                            <button class="btn btn-primary btn-sm">Request Verification</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Pending Company Card 8 - Brazil -->
+                    <div class="company-card pending">
+                        <div class="company-card-header">
+                            <div class="company-avatar" style="background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);">
+                                <span>BI</span>
+                            </div>
+                            <div class="company-info">
+                                <h3>Brasil Importadora Ltda</h3>
+                                <p class="company-location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    São Paulo, Brazil
+                                </p>
+                            </div>
+                            <div class="verification-badge pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="12" y1="8" x2="12" y2="12"/>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                                </svg>
+                                Pending
+                            </div>
+                        </div>
+                        <div class="company-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Registration</span>
+                                <span class="detail-value">CNPJ 12.345.678</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">State Reg</span>
+                                <span class="detail-value">IE 123456789</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Trust Score</span>
+                                <span class="trust-score medium">68/100</span>
+                            </div>
+                        </div>
+                        <div class="company-verification-checks">
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                CNPJ Valid
+                            </div>
+                            <div class="check-item pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="12" y1="8" x2="12" y2="12"/>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                                </svg>
+                                State Registry
+                            </div>
+                            <div class="check-item pending">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="12" y1="8" x2="12" y2="12"/>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                                </svg>
+                                Website Domain
+                            </div>
+                            <div class="check-item not-verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18"/>
+                                    <line x1="6" y1="6" x2="18" y2="18"/>
+                                </svg>
+                                Trade References
+                            </div>
+                        </div>
+                        <div class="company-card-footer">
+                            <button class="btn btn-secondary btn-sm">View Profile</button>
+                            <button class="btn btn-primary btn-sm">Verify Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Verified Company Card 9 - Singapore -->
+                    <div class="company-card verified">
+                        <div class="company-card-header">
+                            <div class="company-avatar" style="background: linear-gradient(135deg, #F97316 0%, #EA580C 100%);">
+                                <span>AP</span>
+                            </div>
+                            <div class="company-info">
+                                <h3>Asia Pacific Trading Pte Ltd</h3>
+                                <p class="company-location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    Singapore
+                                </p>
+                            </div>
+                            <div class="verification-badge verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M9 12l2 2 4-4"/>
+                                </svg>
+                                Verified
+                            </div>
+                        </div>
+                        <div class="company-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Registration</span>
+                                <span class="detail-value">202412345K</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">UEN</span>
+                                <span class="detail-value">T18LL1234A</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Trust Score</span>
+                                <span class="trust-score high">96/100</span>
+                            </div>
+                        </div>
+                        <div class="company-verification-checks">
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                ACRA Registered
+                            </div>
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                GST Registered
+                            </div>
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Trade License
+                            </div>
+                            <div class="check-item verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Bank Verified
+                            </div>
+                        </div>
+                        <div class="company-card-footer">
+                            <button class="btn btn-secondary btn-sm">View Profile</button>
+                            <button class="btn btn-primary btn-sm">Request Verification</button>
                         </div>
                     </div>
                 </div>
@@ -1101,11 +1582,12 @@
     </section>
 
     <!-- Pricing Section -->
+    <!-- Document Verification Pricing -->
     <section class="pricing" id="pricing">
         <div class="container">
             <div class="section-header">
-                <h2>Simple, Transparent Pricing</h2>
-                <p>Choose the plan that fits your trade volume</p>
+                <h2>Document Verification Plans</h2>
+                <p>Choose the plan that fits your document validation needs</p>
             </div>
             
             <div class="pricing-toggle">
@@ -1122,7 +1604,7 @@
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h3>Starter</h3>
-                        <p>For small traders and SMEs</p>
+                        <p>For small traders getting started</p>
                     </div>
                     <div class="pricing-amount">
                         <span class="currency">$</span>
@@ -1132,15 +1614,15 @@
                     <ul class="pricing-features">
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            50 documents/month
+                            <strong>50 documents/month</strong>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Core document types (BL, Invoice, CO)
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
                             Basic fraud detection
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Invoice & BOL analysis
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
@@ -1149,10 +1631,6 @@
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
                             Email support
-                        </li>
-                        <li class="disabled">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                            Cross-document validation
                         </li>
                         <li class="disabled">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -1181,7 +1659,7 @@
                     <ul class="pricing-features">
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            500 documents/month
+                            <strong>500 documents/month</strong>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
@@ -1229,7 +1707,7 @@
                     <ul class="pricing-features">
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Unlimited documents
+                            <strong>Unlimited documents</strong>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
@@ -1266,6 +1744,107 @@
             
             <div class="pricing-footer">
                 <p>All plans include: Secure data storage, GDPR compliance, 99.9% uptime SLA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Verification Add-on -->
+    <section class="company-pricing" id="company-pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Company Verification</h2>
+                <p>Add-on service for supplier and buyer due diligence</p>
+            </div>
+            
+            <div class="pricing-grid two-col">
+                <!-- Pay Per Check -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Pay Per Check</h3>
+                        <p>For occasional verification needs</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price">25</span>
+                        <span class="period">/check</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Full company profile
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Business registry check
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            VAT/Tax ID validation
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Trust score (0-100)
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Sanctions screening
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary btn-full">Buy Credits</button>
+                </div>
+                
+                <!-- Bundle Package -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Best Value</div>
+                    <div class="pricing-header">
+                        <h3>Bundle Package</h3>
+                        <p>For regular verification needs</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price">200</span>
+                        <span class="period">/10 checks</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <strong>10 company checks</strong>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <strong>20% discount</strong> ($20/check)
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Full company profile
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Business registry check
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            VAT/Tax ID validation
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Trust score & risk assessment
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Sanctions screening
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Priority processing
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary btn-full">Purchase Bundle</button>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <p><strong>Note:</strong> Company verification is an optional add-on. You can use document verification without purchasing company checks. Credits never expire.</p>
             </div>
         </div>
     </section>

@@ -2768,6 +2768,180 @@ img {
     line-height: 1.6;
 }
 
+/* ============================================
+   Company Pricing Section
+   ============================================ */
+.company-pricing {
+    padding: var(--space-4xl) 0;
+    background: var(--primary);
+}
+
+.company-pricing .section-header h2 {
+    color: white;
+}
+
+.company-pricing .section-header p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.pricing-grid.two-col {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pricing-note {
+    text-align: center;
+    margin-top: var(--space-xl);
+    padding: var(--space-lg);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+}
+
+.pricing-note p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+.pricing-note strong {
+    color: var(--accent);
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: relative;
+}
+
+.language-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-md);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.language-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.language-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 160px;
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: var(--transition-fast);
+    z-index: 100;
+}
+
+.language-switcher:hover .language-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+    color: var(--text-primary);
+    font-size: 14px;
+    transition: var(--transition-fast);
+    cursor: pointer;
+}
+
+.language-option:first-child {
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.language-option:last-child {
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.language-option:hover {
+    background: var(--bg);
+}
+
+.language-option.active {
+    color: var(--accent);
+    background: rgba(0, 212, 170, 0.1);
+}
+
+.language-flag {
+    font-size: 18px;
+}
+
+/* Trust Badges */
+.trust-badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    margin-top: var(--space-xl);
+    flex-wrap: wrap;
+}
+
+.trust-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+}
+
+.trust-badge svg {
+    width: 20px;
+    height: 20px;
+    color: var(--accent);
+}
+
+.trust-badge span {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Payment Security Badges */
+.payment-security {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.payment-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.payment-badge svg {
+    width: 24px;
+    height: 24px;
+}
+
 @media (max-width: 768px) {
     .verify-search-box {
         flex-direction: column;
@@ -2783,6 +2957,10 @@ img {
     }
     
     .verification-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-grid.two-col {
         grid-template-columns: 1fr;
     }
 }
