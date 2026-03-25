@@ -1,0 +1,22 @@
+{
+  "name": "trustlayer-trade",
+  "version": "1.0.0",
+  "description": "AI-Powered Trade Document Fraud Detection Platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -s . -l 8080",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "npx surge . trustlayertrade.surge.sh"
+  },
+  "dependencies": {
+    "firebase": "^10.7.0",
+    "@stripe/stripe-js": "^2.2.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0",
+    "surge": "^0.23.1"
+  },
+  "keywords": ["trade", "fraud-detection", "documents", "verification"],
+  "author": "TrustLayer Trade",
+  "license": "PRIVATE"
+}
