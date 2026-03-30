@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card - Mohammed Tahiri</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            max-width: 1000px;
+        }
+        
+        .card-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Business Card Dimensions: 3.5" x 2" (standard) */
+        .business-card {
+            width: 350px;
+            height: 200px;
+            border-radius: 8px;
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .business-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200px;
+            height: 200px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+        
+        .card-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Front Side */
+        .front-side {
+            background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+            border-top: 4px solid #00d9a3;
+        }
+        
+        .card-header {
+            margin-bottom: 15px;
+        }
+        
+        .card-name {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        
+        .card-title {
+            font-size: 11px;
+            opacity: 0.9;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            color: #00d9a3;
+            font-weight: 600;
+        }
+        
+        .card-divider {
+            height: 1px;
+            background: rgba(0, 217, 163, 0.3);
+            margin: 12px 0;
+        }
+        
+        .card-details {
+            font-size: 11px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+        
+        .card-detail-line {
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-detail-icon {
+            margin-right: 6px;
+            font-size: 10px;
+            color: #00d9a3;
+        }
+        
+        .card-footer {
+            font-size: 10px;
+            opacity: 0.8;
+            text-align: right;
+            margin-top: 8px;
+            color: #00d9a3;
+        }
+        
+        /* Back Side */
+        .back-side {
+            background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+            border-top: 4px solid #00d9a3;
+        }
+        
+        .back-side .card-content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .company-info {
+            font-size: 11px;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        .company-name {
+            font-weight: 700;
+            font-size: 13px;
+            margin-bottom: 8px;
+            color: #00d9a3;
+        }
+        
+        .company-address {
+            font-size: 10px;
+            line-height: 1.6;
+            opacity: 0.95;
+            margin-bottom: 8px;
+        }
+        
+        .company-tagline {
+            font-size: 9px;
+            opacity: 0.85;
+            font-style: italic;
+            margin-top: 8px;
+            color: #00d9a3;
+        }
+        
+        .print-info {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #666;
+            line-height: 1.8;
+            grid-column: 1 / -1;
+        }
+        
+        .print-info h3 {
+            color: #0f1419;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .print-info ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .print-info li {
+            margin-bottom: 8px;
+        }
+        
+        .print-info li:before {
+            content: "✓ ";
+            color: #00d9a3;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                grid-template-columns: 1fr;
+                gap: 80px;
+                max-width: 100%;
+            }
+            
+            .print-info {
+                display: none;
+            }
+            
+            .business-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Front Side -->
+        <div class="card-wrapper">
+            <div class="label">Front Side</div>
+            <div class="business-card front-side">
+                <div class="card-content">
+                    <div class="card-header">
+                        <div class="card-name">Mohammed Tahiri</div>
+                        <div class="card-title">Sales & Marketing Manager</div>
+                    </div>
+                    
+                    <div class="card-divider"></div>
+                    
+                    <div class="card-details">
+                        <div class="card-detail-line">
+                            <span class="card-detail-icon">📧</span>
+                            <span>contact@trustlayer.trade</span>
+                        </div>
+                        <div class="card-detail-line">
+                            <span class="card-detail-icon">🌐</span>
+                            <span>www.trustlayer.trade</span>
+                        </div>
+                        <div class="card-detail-line">
+                            <span class="card-detail-icon">📱</span>
+                            <span>+212 661 402 441</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">TrustLayer Trade</div>
+            </div>
+        </div>
+        
+        <!-- Back Side -->
+        <div class="card-wrapper">
+            <div class="label">Back Side (Verso)</div>
+            <div class="business-card back-side">
+                <div class="card-content">
+                    <div class="company-name">TrustLayer Trade</div>
+                    <div class="company-address">
+                        Randall Ave Ste 100<br>
+                        Cheyenne, WY 82001<br>
+                        USA
+                    </div>
+                    <div class="card-divider"></div>
+                    <div class="company-tagline">
+                        Revolutionizing Trade Finance Verification
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="print-info">
+        <h3>📋 Printing Instructions</h3>
+        <ul>
+            <li>Print on 350gsm cardstock for professional quality</li>
+            <li>Use color printing (full color recommended)</li>
+            <li>Standard business card size: 3.5" × 2" (89mm × 51mm)</li>
+            <li>Print both sides on same sheet (recto-verso)</li>
+            <li>Cut along the dotted lines after printing</li>
+            <li>Recommended: Professional printing service for best results</li>
+        </ul>
+    </div>
+</body>
+</html>

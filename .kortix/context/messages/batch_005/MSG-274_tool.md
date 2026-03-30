@@ -1,0 +1,6 @@
+# MSG-274 [TOOL]
+Archived: 2026-03-27T17:13:29.819532+00:00
+
+---
+
+{"message": "Successfully loaded image 'uploads/5f4db656-1f2a-4a37-84a2-a36163ba04be.jpeg' into context (reduced from 3123.4KB to 269.3KB).", "file_path": "uploads/5f4db656-1f2a-4a37-84a2-a36163ba04be.jpeg", "image_url": "https://supa.kortix.com/storage/v1/object/public/image-uploads/loaded_images/5f4db656-1f2a-4a37-84a2-a36163ba04be_20260325_215817_a43a2b66.jpg?", "_image_context_data": {"thread_id": "a6a47c98-3d32-4340-a0dc-bb51588a8f8a", "message_content": {"role": "user", "content": [{"type": "text", "text": "[Image loaded from 'uploads/5f4db656-1f2a-4a37-84a2-a36163ba04be.jpeg']"}, {"type": "image_url", "image_url": {"url": "https://supa.kortix.com/storage/v1/object/public/image-uploads/loaded_images/5f4db656-1f2a-4a37-84a2-a36163ba04be_20260325_215817_a43a2b66.jpg?"}}]}, "metadata": {"file_path": "uploads/5f4db656-1f2a-4a37-84a2-a36163ba04be.jpeg", "mime_type": "image/jpeg", "original_size": 3198354, "compressed_size": 275759}}}

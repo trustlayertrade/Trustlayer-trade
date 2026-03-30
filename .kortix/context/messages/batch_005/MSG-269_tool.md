@@ -1,0 +1,6 @@
+# MSG-269 [TOOL]
+Archived: 2026-03-27T17:13:29.819470+00:00
+
+---
+
+{"message": "Successfully loaded image 'uploads/cc75887f-20c0-4979-a023-840a1213fbd9.jpeg' into context (reduced from 2718.3KB to 248.3KB).", "file_path": "uploads/cc75887f-20c0-4979-a023-840a1213fbd9.jpeg", "image_url": "https://supa.kortix.com/storage/v1/object/public/image-uploads/loaded_images/cc75887f-20c0-4979-a023-840a1213fbd9_20260325_214650_dd158925.jpg?", "_image_context_data": {"thread_id": "a6a47c98-3d32-4340-a0dc-bb51588a8f8a", "message_content": {"role": "user", "content": [{"type": "text", "text": "[Image loaded from 'uploads/cc75887f-20c0-4979-a023-840a1213fbd9.jpeg']"}, {"type": "image_url", "image_url": {"url": "https://supa.kortix.com/storage/v1/object/public/image-uploads/loaded_images/cc75887f-20c0-4979-a023-840a1213fbd9_20260325_214650_dd158925.jpg?"}}]}, "metadata": {"file_path": "uploads/cc75887f-20c0-4979-a023-840a1213fbd9.jpeg", "mime_type": "image/jpeg", "original_size": 2783505, "compressed_size": 254220}}}

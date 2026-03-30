@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustLayer Trade - Professional Presentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            color: #333;
+        }
+        
+        .slide {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            page-break-after: always;
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+        }
+        
+        .slide-content {
+            width: 100%;
+            height: 100%;
+            padding: 80px 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        /* Slide 1: Title */
+        .slide-1 {
+            background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+        }
+        
+        .slide-1 .slide-content {
+            color: white;
+        }
+        
+        .slide-1 h1 {
+            font-size: 64px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .slide-1 .subtitle {
+            font-size: 28px;
+            margin-bottom: 20px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .slide-1 .subtitle-accent {
+            color: #00d9a3;
+            font-weight: 600;
+        }
+        
+        .slide-1 .tagline {
+            font-size: 18px;
+            opacity: 0.85;
+            max-width: 600px;
+            line-height: 1.6;
+            margin-top: 30px;
+        }
+        
+        /* Slide 2-10: Content Slides */
+        .slide-content h2 {
+            color: #0f1419;
+            font-size: 44px;
+            margin-bottom: 60px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .slide-content h2 .accent {
+            color: #00d9a3;
+        }
+        
+        .content-wrapper {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        /* Problem List */
+        .problem-list {
+            list-style: none;
+            text-align: left;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .problem-list li {
+            font-size: 20px;
+            line-height: 2;
+            margin-bottom: 15px;
+            padding-left: 50px;
+            position: relative;
+            color: #444;
+        }
+        
+        .problem-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #00d9a3;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        
+        /* Solution Grid */
+        .solution-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .solution-card {
+            background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 4px solid #00d9a3;
+        }
+        
+        .solution-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .solution-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+        
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .feature-box {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #00d9a3;
+            text-align: center;
+        }
+        
+        .feature-box h3 {
+            color: #0f1419;
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .feature-box p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        /* Market Stats - CLEANED UP */
+        .market-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+            color: white;
+            padding: 35px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 4px solid #00d9a3;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .stat-box .number {
+            font-size: 44px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            line-height: 1;
+            color: #00d9a3;
+        }
+        
+        .stat-box .label {
+            font-size: 14px;
+            opacity: 0.95;
+            line-height: 1.4;
+        }
+        
+        /* Pricing Table */
+        .pricing-table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .pricing-table th {
+            background: #0f1419;
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .pricing-table td {
+            padding: 18px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 15px;
+        }
+        
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .pricing-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        /* Revenue Chart */
+        .projection-chart {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .projection-bar {
+            text-align: center;
+        }
+        
+        .bar-container {
+            height: 250px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .bar {
+            background: linear-gradient(to top, #0f1419, #00d9a3);
+            border-radius: 8px 8px 0 0;
+            width: 60px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            padding-bottom: 10px;
+        }
+        
+        .projection-bar label {
+            font-size: 14px;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        /* Timeline */
+        .gtm-timeline {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .timeline-item {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 5px solid #00d9a3;
+        }
+        
+        .timeline-item h3 {
+            color: #0f1419;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .timeline-item ul {
+            list-style: none;
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: left;
+        }
+        
+        .timeline-item li:before {
+            content: "→ ";
+            color: #00d9a3;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        /* Team Section */
+        .team-section {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .team-info {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.8;
+            border-left: 5px solid #00d9a3;
+        }
+        
+        .team-info strong {
+            color: #0f1419;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+        
+        /* CTA Slide */
+        .slide-10 {
+            background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+        }
+        
+        .slide-10 .slide-content {
+            color: white;
+        }
+        
+        .slide-10 h2 {
+            color: white;
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+        
+        .slide-10 h2 .accent {
+            color: #00d9a3;
+        }
+        
+        .cta-content {
+            font-size: 22px;
+            line-height: 1.8;
+            margin-bottom: 50px;
+            max-width: 700px;
+        }
+        
+        .contact-info {
+            background: rgba(0, 217, 163, 0.15);
+            padding: 40px;
+            border-radius: 12px;
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 500px;
+            border: 2px solid #00d9a3;
+        }
+        
+        .contact-info p {
+            margin-bottom: 12px;
+        }
+        
+        .contact-info strong {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #00d9a3;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .slide {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Title -->
+    <div class="slide slide-1">
+        <div class="slide-content">
+            <h1>TrustLayer <span class="subtitle-accent">Trade</span></h1>
+            <div class="subtitle">Revolutionizing <span class="subtitle-accent">Trade Finance Verification</span></div>
+            <div class="tagline">Connecting Importers, Exporters, Forwarders & Trading Companies</div>
+        </div>
+    </div>
+    
+    <!-- Slide 2: The Problem -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>The <span class="accent">Problem</span></h2>
+            <div class="content-wrapper">
+                <ul class="problem-list">
+                    <li>Importers, exporters, and forwarders waste 40% of time verifying trading partners</li>
+                    <li>No centralized platform for trade document verification across all parties</li>
+                    <li>High risk of fraud and counterfeit documents in international trade</li>
+                    <li>Manual processes slow down transactions and increase costs</li>
+                    <li>Lack of trust between importers, exporters, forwarders, and logistics providers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 3: Our Solution -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Our <span class="accent">Solution</span></h2>
+            <div class="content-wrapper">
+                <div class="solution-grid">
+                    <div class="solution-card">
+                        <h3>📄 Document Verification</h3>
+                        <p>AI-powered verification of trade documents with instant authenticity checks</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>🏢 Company Verification</h3>
+                        <p>Complete company background checks and credential verification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 4: Key Features -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Key <span class="accent">Features</span></h2>
+            <div class="content-wrapper">
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <h3>⚡ Instant Verification</h3>
+                        <p>Get results in minutes, not days</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>🔒 Secure Platform</h3>
+                        <p>Bank-level security for sensitive documents</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>🌍 Global Coverage</h3>
+                        <p>Verify companies in 150+ countries</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>📊 Analytics Dashboard</h3>
+                        <p>Track all verifications and transactions</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>🔗 API Integration</h3>
+                        <p>Seamless integration with existing systems</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>💬 24/7 Support</h3>
+                        <p>Dedicated customer support team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 5: Market Opportunity -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Market <span class="accent">Opportunity</span></h2>
+            <div class="content-wrapper">
+                <div class="market-stats">
+                    <div class="stat-box">
+                        <div class="number">$4.5T</div>
+                        <div class="label">Global Trade Finance Market</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">500K+</div>
+                        <div class="label">Freight Forwarders Worldwide</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">$2B+</div>
+                        <div class="label">Annual Fraud Losses</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 6: Revenue Model -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Revenue <span class="accent">Model</span></h2>
+            <div class="content-wrapper">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Starter</th>
+                            <th>Professional</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Document Verification</strong></td>
+                            <td>$5/doc</td>
+                            <td>$3/doc</td>
+                            <td>Custom</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Company Verification</strong></td>
+                            <td>$10/check</td>
+                            <td>$6/check</td>
+                            <td>Custom</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Monthly Subscription</strong></td>
+                            <td>$99</td>
+                            <td>$299</td>
+                            <td>$999+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 7: Revenue Projections -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>12-Month Revenue <span class="accent">Projections</span></h2>
+            <div class="content-wrapper">
+                <div class="projection-chart">
+                    <div class="projection-bar">
+                        <div class="bar-container">
+                            <div class="bar" style="height: 60px;">$15K</div>
+                        </div>
+                        <label>Month 1</label>
+                    </div>
+                    <div class="projection-bar">
+                        <div class="bar-container">
+                            <div class="bar" style="height: 120px;">$45K</div>
+                        </div>
+                        <label>Month 3</label>
+                    </div>
+                    <div class="projection-bar">
+                        <div class="bar-container">
+                            <div class="bar" style="height: 180px;">$85K</div>
+                        </div>
+                        <label>Month 6</label>
+                    </div>
+                    <div class="projection-bar">
+                        <div class="bar-container">
+                            <div class="bar" style="height: 240px;">$150K</div>
+                        </div>
+                        <label>Month 12</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 8: Go-to-Market Strategy -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Go-to-Market <span class="accent">Strategy</span></h2>
+            <div class="content-wrapper">
+                <div class="gtm-timeline">
+                    <div class="timeline-item">
+                        <h3>Phase 1: Launch</h3>
+                        <ul>
+                            <li>Beta launch with 50 users</li>
+                            <li>Chamber partnerships</li>
+                            <li>Direct outreach to forwarders</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Phase 2: Growth</h3>
+                        <ul>
+                            <li>Scale to 500+ users</li>
+                            <li>B2B partnerships</li>
+                            <li>SEO & content marketing</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Phase 3: Scale</h3>
+                        <ul>
+                            <li>Expand to 2000+ users</li>
+                            <li>International expansion</li>
+                            <li>API partnerships</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 9: Team & Partnerships -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Team & <span class="accent">Partnerships</span></h2>
+            <div class="team-section">
+                <div class="team-info">
+                    <strong>Founder & CEO: Mohammed Tahiri</strong>
+                    Sales & Marketing Manager | Trade Finance Expert<br>
+                    Based in Cheyenne, Wyoming, USA
+                </div>
+                <div class="team-info">
+                    <strong>Strategic Partnerships:</strong>
+                    • Chambers of Commerce (Casablanca, Americas)<br>
+                    • Freight Forwarder Associations<br>
+                    • Trade Finance Institutions<br>
+                    • B2B Logistics Networks
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 10: Call to Action -->
+    <div class="slide slide-10">
+        <div class="slide-content">
+            <h2>Let's Transform <span class="accent">Trade Finance</span></h2>
+            <div class="cta-content">
+                <p>Join us in revolutionizing how importers, exporters, and forwarders verify trade partners</p>
+                <p>Partnership opportunities available now</p>
+            </div>
+            <div class="contact-info">
+                <strong>Mohammed Tahiri</strong>
+                <p>Sales & Marketing Manager</p>
+                <p>📧 contact@trustlayer.trade</p>
+                <p>🌐 www.trustlayer.trade</p>
+                <p>📱 +212 661 402 441</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

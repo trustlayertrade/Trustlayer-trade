@@ -1,0 +1,6 @@
+# MSG-486 [TOOL]
+Archived: 2026-03-28T23:41:40.035643+00:00
+
+---
+
+{"message": "Successfully loaded image 'https://supa.kortix.com/storage/v1/object/public/browser-screenshots/image_20260328_014923_a4428969.png' into context (reduced from 359.0KB to 322.8KB).", "file_path": "https://supa.kortix.com/storage/v1/object/public/browser-screenshots/image_20260328_014923_a4428969.png", "image_url": "https://supa.kortix.com/storage/v1/object/public/image-uploads/loaded_images/image_20260328_014923_a4428969_20260328_014932_54b83838.png?", "_image_context_data": {"thread_id": "a6a47c98-3d32-4340-a0dc-bb51588a8f8a", "message_content": {"role": "user", "content": [{"type": "text", "text": "[Image loaded from 'https://supa.kortix.com/storage/v1/object/public/browser-screenshots/image_20260328_014923_a4428969.png']"}, {"type": "image_url", "image_url": {"url": "https://supa.kortix.com/storage/v1/object/public/image-uploads/loaded_images/image_20260328_014923_a4428969_20260328_014932_54b83838.png?"}}]}, "metadata": {"file_path": "https://supa.kortix.com/storage/v1/object/public/browser-screenshots/image_20260328_014923_a4428969.png", "mime_type": "image/png", "original_size": 367615, "compressed_size": 330563}}}
