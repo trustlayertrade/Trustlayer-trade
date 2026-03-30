@@ -1,6 +1,6 @@
 # MSG-295 [USER]
-Archived: 2026-03-27T17:13:29.820027+00:00
+Archived: 2026-03-30T01:31:56.710775+00:00
 
 ---
 
-Of course but I'm thinking hiring peaple in the closer future.
+great partner!!!! tell me please, will finish the website and make it operatinal? I know I should forme the llc now but i have som points to change. 1- the adress must be the same in my visite card "cheyenne..." not morocco beacause i want the project appear 100% made in usa. why? because most foreign people and countries dont like arabian project and looks not realable. 2- i will give you after creating the llc a phone nbr for support. 3- i dont want appear my personnel name because the problem of nbr 1. 4- I will need you to add clients suggestions of the service of our website frome those countries exactely: france/ spain/ italy/ uae/ morocco/ neetherland and korea. 4 stars up. I will give you names of all those persons and wich language for everyone. 5- a tichnical question: in case the plateforme is 100% operational and i got a purchase from a buyer in turkey and he needs to check a his seller company in Brasil, is that will be workable or not, i'm afraid of that problem happens to someone when he want checking a company any where in the world.

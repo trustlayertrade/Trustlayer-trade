@@ -1,0 +1,6 @@
+# MSG-191 [TOOL]
+Archived: 2026-03-30T01:31:56.709036+00:00
+
+---
+
+{"message": "Successfully loaded image 'uploads/eaf5008f-19e3-4930-8f4f-3fff28efc85b.jpeg' into context (reduced from 1425.1KB to 155.4KB).", "file_path": "uploads/eaf5008f-19e3-4930-8f4f-3fff28efc85b.jpeg", "image_url": "https://supa.kortix.com/storage/v1/object/public/image-uploads/loaded_images/eaf5008f-19e3-4930-8f4f-3fff28efc85b_20260329_001447_08b58799.jpg?", "_image_context_data": {"thread_id": "a6a47c98-3d32-4340-a0dc-bb51588a8f8a", "message_content": {"role": "user", "content": [{"type": "text", "text": "[Image loaded from 'uploads/eaf5008f-19e3-4930-8f4f-3fff28efc85b.jpeg']"}, {"type": "image_url", "image_url": {"url": "https://supa.kortix.com/storage/v1/object/public/image-uploads/loaded_images/eaf5008f-19e3-4930-8f4f-3fff28efc85b_20260329_001447_08b58799.jpg?"}}]}, "metadata": {"file_path": "uploads/eaf5008f-19e3-4930-8f4f-3fff28efc85b.jpeg", "mime_type": "image/jpeg", "original_size": 1459325, "compressed_size": 159131}}}

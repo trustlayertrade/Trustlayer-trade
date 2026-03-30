@@ -1,0 +1,6 @@
+# MSG-278 [TOOL]
+Archived: 2026-03-30T01:31:56.710390+00:00
+
+---
+
+{"message": "Successfully loaded image 'uploads/d52e58a6-983d-4f5e-8f2d-08677bb22933.jpeg' into context (reduced from 2428.8KB to 201.3KB).", "file_path": "uploads/d52e58a6-983d-4f5e-8f2d-08677bb22933.jpeg", "image_url": "https://supa.kortix.com/storage/v1/object/public/image-uploads/loaded_images/d52e58a6-983d-4f5e-8f2d-08677bb22933_20260329_224936_b1f7b469.jpg?", "_image_context_data": {"thread_id": "a6a47c98-3d32-4340-a0dc-bb51588a8f8a", "message_content": {"role": "user", "content": [{"type": "text", "text": "[Image loaded from 'uploads/d52e58a6-983d-4f5e-8f2d-08677bb22933.jpeg']"}, {"type": "image_url", "image_url": {"url": "https://supa.kortix.com/storage/v1/object/public/image-uploads/loaded_images/d52e58a6-983d-4f5e-8f2d-08677bb22933_20260329_224936_b1f7b469.jpg?"}}]}, "metadata": {"file_path": "uploads/d52e58a6-983d-4f5e-8f2d-08677bb22933.jpeg", "mime_type": "image/jpeg", "original_size": 2487057, "compressed_size": 206152}}}
