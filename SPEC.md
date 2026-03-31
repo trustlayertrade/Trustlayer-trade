@@ -1,7 +1,7 @@
-# TrustLayer Trade - AI Trade Document Fraud Detection Platform
+# TradeSecurix - AI Trade Document Fraud Detection Platform
 
 ## Project Overview
-- **Project Name**: TrustLayer Trade
+- **Project Name**: TradeSecurix
 - **Type**: Web Application (Single Page Application)
 - **Core Functionality**: AI-powered platform for detecting document fraud and inconsistencies in international trade documents (invoices, bills of lading, packing lists, bank details)
 - **Target Users**: Import/export companies, freight forwarders, finance/operations teams, SMEs in cross-border trade
@@ -14,7 +14,7 @@
 
 **Navigation Bar**
 - Fixed top navigation
-- Logo (left): "TrustLayer" with shield icon + "Trade"
+- Logo (left): "Trade" with shield icon + "Securix"
 - Navigation links (center): Dashboard, Documents, Analysis, Reports
 - User actions (right): Notification bell, User avatar dropdown
 

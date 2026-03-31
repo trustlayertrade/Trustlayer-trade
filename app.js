@@ -1,5 +1,5 @@
 /* ============================================
-   TrustLayer Trade - Application JavaScript
+   TradeSecurix - Application JavaScript
    AI-Powered Trade Document Fraud Detection
    ============================================ */
 
@@ -643,7 +643,7 @@ function init() {
     
     // Add custom font loading
     document.fonts.ready.then(() => {
-        console.log('TrustLayer Trade - Fonts loaded');
+        console.log('TradeSecurix - Fonts loaded');
     });
     
     // Initial stats animation
