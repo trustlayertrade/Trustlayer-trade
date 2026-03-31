@@ -16,7 +16,7 @@ Let me walk you through the live platform."
 ## **SECTION 1: HOMEPAGE TOUR (1 minute)**
 
 **What to show:**
-- Navigate to www.trustlayer.trade
+- Navigate to www.tradesecurix.com
 - Scroll through the hero section
 - Show the value proposition
 

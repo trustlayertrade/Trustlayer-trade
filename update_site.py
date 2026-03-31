@@ -196,7 +196,7 @@ contact_html = '''
                         </div>
                         <div>
                             <h4>Email</h4>
-                            <p>support@trustlayer.trade</p>
+                            <p>support@tradesecurix.com</p>
                         </div>
                     </div>
                 </div>
