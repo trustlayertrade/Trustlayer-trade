@@ -1,6 +1,6 @@
 {
   "thread_id": "a6a47c98-3d32-4340-a0dc-bb51588a8f8a",
-  "total_archived": 337,
+  "total_archived": 437,
   "batches": [
     {
       "batch": 1,
@@ -324,19 +324,88 @@
         "Client device issue: Kortix Android app crash"
       ],
       "archived_at": "2026-03-30T01:32:13.777258+00:00"
+    },
+    {
+      "batch": 6,
+      "messages": "338-437",
+      "message_count": 100,
+      "message_ids": [
+        "a4fe2b3a-8d2e-44d4-948a-c8becf85ff50",
+        "08e38fbd-1756-4266-af5c-8b0e18a48c3a"
+      ],
+      "tool_results": [
+        "tooluse_DqmPEgESuqRukJOfvT6f3y",
+        "tooluse_0rdc7ggDPkOwBdgLRrp5qU",
+        "tooluse_Alv530wWQqGnidufD5fERZ",
+        "tooluse_xSOxERoaYJMeMnM5ag2QMt",
+        "tooluse_5Pl6RfPnrLg9CcQmbu7VM5",
+        "tooluse_tRGyiDrrNr8MJ7wOOfgDs2",
+        "tooluse_MzfQRIwoe8XE8SRdFElu5t",
+        "tooluse_dxzjexFNkt0tBnhxBPFXgA",
+        "tooluse_Yy0GBJL8IO2ZtH9q1jXu4h",
+        "tooluse_7WfkmP8Ql4f8KrIykkDwJP",
+        "tooluse_9upqCEGfu4XylmyCuTYpEG",
+        "tooluse_nwgqzIrBIRCtpejPrkUZv2",
+        "tooluse_WJvNPc2dJIluH8pYiEGsxC",
+        "tooluse_CqsmGMoHF8x2BXEQUFqSBh",
+        "tooluse_MEmZEj1g7nkN8FPPjZcBbO",
+        "tooluse_8h3PPLLcJ5m8BJHVgCpjo4",
+        "tooluse_7Wqk1F73waiAyjwFxmuP0G",
+        "tooluse_uXGcwq4ONQK14vagzUPSlC",
+        "tooluse_DINs2oPKDgYScijXWMYOUJ",
+        "tooluse_j7yjUXyitfJdR1oi2vYp8L",
+        "tooluse_MBp9anIvBbNi5uukOpp7gX",
+        "tooluse_sWtUoRnG74WRe6HvaSgk0r",
+        "tooluse_lqURPojAlX5YVIlANWNrE7",
+        "tooluse_RuuSXvxIj21hIunhN0TTtY",
+        "tooluse_jVdKbCla9zlIGOgiwkn3Px",
+        "tooluse_OMaqiCKLqy1h0gysA5dQ2I",
+        "tooluse_oiiCGtx8gqsbYOl4hCXBnt",
+        "tooluse_KzRdXhQui5pIgvctAXpG1j",
+        "tooluse_uGtOj9nLXooKtTc9c8Tb4X",
+        "tooluse_kHSr0oJ4ffJX2T5hoS05jX",
+        "tooluse_kM0y7UvnWXpNpAFuxmDn2R",
+        "tooluse_4bPPxrm5brt268I3gFjDmT",
+        "tooluse_O8DdQmtc157nYyM1H2e0qI",
+        "tooluse_KEWdqfrilZ2ZpUvL2O6OeB",
+        "tooluse_AqUutaAyNmreERbLqKbvS4",
+        "tooluse_ilbEN6phIfdlvaQG8GeNFJ",
+        "tooluse_H9Y9daSxqDXtPtPX37GdNF",
+        "tooluse_cNYA7SsoG5pcj5mab6g5wr",
+        "tooluse_7NLOyn0CgYtBHko1AnIt43",
+        "tooluse_PNOcdt3u4WGAIEz8aVat23",
+        "tooluse_um62WdvQX9hVm656mkT3J8",
+        "tooluse_KnorxzqmY8oOXoShEyDzez",
+        "tooluse_h8KVvN0vhRegRoFJt0bBOy",
+        "tooluse_vUfS96GuutV1hLEleEfcpc",
+        "tooluse_ud0VeScLCmFZUCvj3zwsUK",
+        "tooluse_nmSXj4q7wVo0tOa7bRfTjk",
+        "tooluse_e7xPl3YspsR6lEn7E9tnjh"
+      ],
+      "topics": [
+        "Deployment & DNS (Vercel, DEPLOYMENT_NOT_FOUND, vercel.json, name servers)",
+        "Git workflow & authentication (rename master->main, SSH keys, GitHub pushes)",
+        "Website content updates (US address, testimonials with flags, pricing/order button)",
+        "Mobile UX fixes (dark mode, centered forms, hamburger menu, responsive layout)",
+        "Collateral (PDF presentation, business card PNGs for Canva)",
+        "Localization & marketing (multilingual testimonials, avatar video)",
+        "Support setup (cheap eSIM for WhatsApp) and Android app crash report"
+      ],
+      "archived_at": "2026-03-31T01:29:26.333264+00:00"
     }
   ],
   "key_facts": {
-    "project_name": "Trustlayer-trade",
+    "project_name": "TrustLayer Trade",
     "tech_stack": [
-      "HTML/CSS/JS (static site)",
-      "GitHub (repo)",
-      "Vercel (hosting/deployment)",
-      "vercel.json (deployment config)",
-      "SSH (git auth)",
-      "DNS (A record + CNAME)"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "GitHub",
+      "Vercel",
+      "vercel.json",
+      "SSH (git auth)"
     ],
-    "current_goal": "Make www.trustlayer.trade fully operational and live with updated content (US address, testimonials with flags), deliver professional PDF and recto/verso business card PNG for Canva, fix company verification/order flow UI (pricing buttons), and confirm hosting/DNS are correct so the user can access and review the live platform.",
+    "current_goal": "Make www.trustlayer.trade fully operational and live with updated US address, multilingual testimonials with flags and photos, fixed company-verification/order flow (include $25 option), mobile UX improvements, collateral (PDF and business-card PNGs for Canva), an explanatory avatar video, and a cheap eSIM recommendation for support/WhatsApp.",
     "workspace_data_path": "/workspace/.kortix/context/messages/batch_002/"
   }
 }
