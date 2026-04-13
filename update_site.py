@@ -30,7 +30,7 @@ testimonials_html = '''
                     <div class="testimonial-rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                     </div>
-                    <p class="testimonial-text">"TrustLayer Trade has transformed how we verify suppliers. The AI detection caught a fraudulent invoice that would have cost us €50,000. Absolutely essential for international trade."</p>
+                    <p class="testimonial-text">"TradeSecurix has transformed how we verify suppliers. The AI detection caught a fraudulent invoice that would have cost us €50,000. Absolutely essential for international trade."</p>
                 </div>
                 
                 <!-- Testimonial 2 - Vietnam -->
@@ -48,7 +48,7 @@ testimonials_html = '''
                     <div class="testimonial-rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                     </div>
-                    <p class="testimonial-text">"Sử dụng TrustLayer Trade đã giúp chúng tôi giảm rủi ro trong các giao dịch quốc tế. Công cụ này rất dễ sử dụng và cung cấp kết quả nhanh chóng."</p>
+                    <p class="testimonial-text">"Sử dụng TradeSecurix đã giúp chúng tôi giảm rủi ro trong các giao dịch quốc tế. Công cụ này rất dễ sử dụng và cung cấp kết quả nhanh chóng."</p>
                 </div>
                 
                 <!-- Testimonial 3 - South Africa -->
@@ -66,7 +66,7 @@ testimonials_html = '''
                     <div class="testimonial-rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                     </div>
-                    <p class="testimonial-text">"TrustLayer Trade has become an indispensable part of our verification process. The accuracy and speed are unmatched. Highly recommended for any serious trader."</p>
+                    <p class="testimonial-text">"TradeSecurix has become an indispensable part of our verification process. The accuracy and speed are unmatched. Highly recommended for any serious trader."</p>
                 </div>
                 
                 <!-- Testimonial 4 - Argentina -->
@@ -84,7 +84,7 @@ testimonials_html = '''
                     <div class="testimonial-rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                     </div>
-                    <p class="testimonial-text">"La plataforma TrustLayer Trade es excelente. Nos ha ayudado a detectar documentos fraudulentos y a proteger nuestras transacciones comerciales internacionales."</p>
+                    <p class="testimonial-text">"La plataforma TradeSecurix es excelente. Nos ha ayudado a detectar documentos fraudulentos y a proteger nuestras transacciones comerciales internacionales."</p>
                 </div>
                 
                 <!-- Testimonial 5 - Canada -->
@@ -102,7 +102,7 @@ testimonials_html = '''
                     <div class="testimonial-rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                     </div>
-                    <p class="testimonial-text">"Outstanding service! TrustLayer Trade provides the confidence we need when dealing with international partners. The verification process is thorough and reliable."</p>
+                    <p class="testimonial-text">"Outstanding service! TradeSecurix provides the confidence we need when dealing with international partners. The verification process is thorough and reliable."</p>
                 </div>
             </div>
         </div>
@@ -196,7 +196,7 @@ contact_html = '''
                         </div>
                         <div>
                             <h4>Email</h4>
-                            <p>support@trustlayer.trade</p>
+                            <p>support@tradesecurix.com</p>
                         </div>
                     </div>
                 </div>
@@ -211,7 +211,7 @@ avatar_video_html = '''
     <section class="avatar-video-section" id="avatar-video">
         <div class="container">
             <div class="section-header">
-                <h2>How TrustLayer Trade Works</h2>
+                <h2>How TradeSecurix Works</h2>
                 <p>Watch our AI expert explain the service in 45 seconds</p>
             </div>
             

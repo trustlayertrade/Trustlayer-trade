@@ -1,5 +1,5 @@
 /* ============================================
-   TrustLayer Trade - Application JavaScript
+   TradeSecurix - Application JavaScript
    AI-Powered Trade Document Fraud Detection
    ============================================ */
 
@@ -9,6 +9,7 @@
 const elements = {
     // Navigation
     navbar: document.getElementById('navbar'),
+    navLinksContainer: document.getElementById('navLinks'),
     navLinks: document.querySelectorAll('.nav-link'),
     mobileMenuBtn: document.getElementById('mobileMenuBtn'),
     
@@ -185,12 +186,13 @@ function showToast(type, title, message) {
     
     const icons = {
         success: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>',
+        info: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>',
         warning: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>',
         error: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>'
     };
     
     toast.innerHTML = `
-        <div class="toast-icon">${icons[type]}</div>
+        <div class="toast-icon">${icons[type] || icons.info}</div>
         <div class="toast-content">
             <div class="toast-title">${title}</div>
             <div class="toast-message">${message}</div>
@@ -260,7 +262,7 @@ function initNavigation() {
     
     // Mobile menu toggle
     elements.mobileMenuBtn?.addEventListener('click', () => {
-        elements.navLinks.classList.toggle('active');
+        elements.navLinksContainer?.classList.toggle('active');
     });
     
     // Smooth scroll for nav links
@@ -641,7 +643,7 @@ function init() {
     
     // Add custom font loading
     document.fonts.ready.then(() => {
-        console.log('TrustLayer Trade - Fonts loaded');
+        console.log('TradeSecurix - Fonts loaded');
     });
     
     // Initial stats animation

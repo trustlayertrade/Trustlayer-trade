@@ -135,7 +135,7 @@ avatar_video_section = '''
     <section class="avatar-video" id="avatar-video">
         <div class="container">
             <div class="section-header">
-                <h2>See How TrustLayer Works</h2>
+                <h2>See How TradeSecurix Works</h2>
                 <p>Watch our AI assistant explain the platform in your language</p>
             </div>
             <div class="video-container">

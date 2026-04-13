@@ -1,11 +1,11 @@
-# TrustLayer Trade - Website Demo Script
+# TradeSecurix - Website Demo Script
 ## For Chilean Embassy Presentation
 
 ---
 
 ## **OPENING (30 seconds)**
 
-"Good morning. Thank you for this opportunity. I'm Mohammed Tahiri, founder of TrustLayer Trade. 
+"Good morning. Thank you for this opportunity. I'm Mohammed Tahiri, founder of TradeSecurix. 
 
 Today I want to show you a platform that's solving a critical problem in international trade: **how to quickly and securely verify trading partners and documents.**
 
@@ -16,12 +16,12 @@ Let me walk you through the live platform."
 ## **SECTION 1: HOMEPAGE TOUR (1 minute)**
 
 **What to show:**
-- Navigate to www.trustlayer.trade
+- Navigate to www.tradesecurix.com
 - Scroll through the hero section
 - Show the value proposition
 
 **What to say:**
-"This is TrustLayer Trade. Notice three things:
+"This is TradeSecurix. Notice three things:
 
 1. **Clear Value Proposition** - We help freight forwarders verify companies and documents instantly
 2. **Professional Design** - This builds trust with our users
@@ -207,7 +207,7 @@ We're looking for partners who understand the local market and can help us scale
 "To summarize:
 
 ✓ **Problem** - Trade verification is slow and risky
-✓ **Solution** - TrustLayer Trade automates this process
+✓ **Solution** - TradeSecurix automates this process
 ✓ **Market** - Huge opportunity in global trade
 ✓ **Team** - Experienced in trade finance and tech
 ✓ **Timeline** - Ready to launch in 30 days

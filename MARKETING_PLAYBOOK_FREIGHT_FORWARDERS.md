@@ -1,4 +1,4 @@
-# TrustLayer Trade Marketing Playbook
+# TradeSecurix Marketing Playbook
 ## Freight Forwarder Customer Acquisition Strategy
 
 ---
@@ -11,7 +11,7 @@ Subject: Quick question about [Company] fraud prevention
 
 Hi [First Name],
 
-My name is [Your Name] from TrustLayer Trade. We help freight forwarders 
+My name is [Your Name] from TradeSecurix. We help freight forwarders 
 like [Company] prevent trade document fraud.
 
 Quick question: How do you currently verify supplier credentials and 
@@ -150,7 +150,7 @@ Subject: Partnership opportunity - Fraud prevention for Chamber members
 
 Dear [Director Name],
 
-I'm [Your Name], founder of TrustLayer Trade, an AI-powered platform 
+I'm [Your Name], founder of TradeSecurix, an AI-powered platform 
 for trade document fraud detection.
 
 I'm reaching out because I believe our service could add significant 
@@ -307,7 +307,7 @@ save your team time?"
 "I hear you. Let me break down the ROI:
 
 Manual verification: 2 hours × $20/hour = $40 per document
-TrustLayer: $25 per document (or less with plans)
+TradeSecurix: $25 per document (or less with plans)
 
 Plus:
 - One prevented fraud = $10k-$100k saved
